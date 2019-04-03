@@ -33,7 +33,7 @@ Create an activity recognition chain by dragging elements from the palette and c
 
 Flows created with Node-RED can be exported over the settings button: 
 
-![Exporting a flow](images/node-RED-node-RED-exporting.png)
+![Exporting a flow](images/node-RED-exporting.png)
 
 Exported flows can be loaded and executed in the Wearables Development Toolkit as described [here](https://github.com/avenix/WDK#Development-with-Node-RED).
 
