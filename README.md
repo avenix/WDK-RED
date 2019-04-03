@@ -4,9 +4,8 @@ WDK-RED is a rapid prototyping platform for wearable device applications. Most w
 
 
 # Setup
-
-* Install Node-RED as described in the [Node-RED Installation page](https://nodered.org/docs/getting-started/installation).
-
+* * ```git clone https://github.com/avenix/WDK-RED.git```
+* Install Node-RED as described in the [Node-RED GitHub page](https://github.com/node-red/node-redn).
 * Install the WDK-RED nodes:
     1. Go to your Node-RED installation directory, usually ```cd ~/.node-red```
     2. Copy the nodes to your npm:  
@@ -27,9 +26,13 @@ npm install <WDK-RED.git>/other/*
 node-red
 ```
 
-Create an activity recognition chain by dragging elements from the palette and connecting them together. Nodes are documented in the [Wearables Development Toolkit documentation](https://github.com/avenix/WDK#application-development). The following image shows an activity recognition chain for detecting soccer goalkeeper training exercises using a wearable motion sensor attached to a glove worn by a goalkeeper:
+# Visual Programming
+
+Create an activity recognition chain by dragging elements from the palette and connecting them together. Nodes are documented in the [Wearables Development Toolkit documentation](https://github.com/avenix/WDK#application-development). The following image shows an activity recognition chain for detecting and classifying soccer goalkeeper training exercises using a wearable motion sensor attached to a glove worn by a goalkeeper:
 
 ![Node-RED flow](images/node-RED-goalkeeper.png)
+
+# Exporting
 
 Flows created with Node-RED can be exported over the settings button: 
 
