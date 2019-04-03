@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('noOp',{
+        category: 'other',
+        color: '#E9967A',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "arrow-in.png",
+        label: function() {
+            return this.name||"noOp";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="noOp">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="noOp">
+    <p>Passes the input data as is to the output port</p>
+</script>

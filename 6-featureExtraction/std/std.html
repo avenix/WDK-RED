@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('std',{
+        category: 'featureExtraction',
+        color: '#E2D96E',
+        defaults: {
+            name: {value:""},
+            featureIdx: {value:"",required:false,validate:RED.validators.number()}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "function.png",
+        label: function() {
+            return this.name||"std";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="std">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    
+    <div class="form-row">
+        <label for="node-input-featureIdx"><i class="icon-tag"></i>featureIdx</label>
+        <input type="text" id="node-input-featureIdx" placeholder="featureIdx">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="std">
+    <p>Calculates the std of the values in the message payload</p>
+</script>

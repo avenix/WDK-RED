@@ -1,0 +1,33 @@
+<script type="text/javascript">
+    RED.nodes.registerType('propertyGetter',{
+        category: 'other',
+        color: '#E9967A',
+        defaults: {
+            name: {value:""},
+            property: {value:"",required:true}
+
+        },
+        inputs:1,
+        outputs:1,
+        icon: "arrow-in.png",
+        label: function() {
+            return this.name||"propertyGetter";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="propertyGetter">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-property"><i class="icon-tag"></i>property</label>
+        <input type="text" id="node-input-property" placeholder="property">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="propertyGetter">
+    <p>Returns the value of the property of the input object</p>
+</script>

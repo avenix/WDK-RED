@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-treeClassifier",
+    "version": "0.0.1",
+    "description": "Trains a TreeClassifier classifier or classifies a feature vector",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "treeClassifier": "treeClassifier.js"
+        }
+    }
+}

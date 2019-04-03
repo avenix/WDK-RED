@@ -1,0 +1,40 @@
+<script type="text/javascript">
+    RED.nodes.registerType('matlabPeakDetector',{
+        category: 'eventDetection',
+        color: '#C7E9C0',
+        defaults: {
+            name: {value:""},
+            minPeakHeight: {value:"160",required:true,validate:RED.validators.number()},
+            minPeakDistance: {value:"100",required:true,validate:RED.validators.number()}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "peakDetector.png",
+        label: function() {
+            return this.name||"matlabPeakDetector";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="MatlabPeakDetector">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    
+    <div class="form-row">
+        <label for="node-input-minPeakHeight"><i class="icon-tag"></i>Minimum Peak Height</label>
+        <input type="text" id="node-input-minPeakHeight">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-minPeakDistance"><i class="icon-tag"></i>Minimum Peak Distance</label>
+        <input type="text" id="node-input-minPeakDistance">
+    </div>
+
+</script>
+
+<script type="text/x-red" data-help-name="MatlabPeakDetector">
+    <p>Detects peaks in a stream of incoming values</p>
+</script>
+

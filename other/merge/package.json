@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-merge",
+    "version": "0.0.1",
+    "description": "Merges two or more inputs",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "merge": "merge.js"
+        }
+    }
+}

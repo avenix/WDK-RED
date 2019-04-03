@@ -1,0 +1,15 @@
+{
+    "name": "node-red-contrib-maxFrequency",
+    "version": "0.0.1",
+    "description": "Calculates the maxFrequency",
+    "dependencies": {
+    },
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "maxFrequency": "maxFrequency.js"
+        }
+    }
+}

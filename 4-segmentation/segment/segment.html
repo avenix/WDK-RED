@@ -1,0 +1,44 @@
+<script type="text/javascript">
+    RED.nodes.registerType('segment',{
+        category: 'segmentation',
+        color: '#AAAA66',
+        defaults: {
+            name: {value:""},
+            start: {value:"0",required:false,validate:RED.validators.number()},
+            end: {value:"450",required:false,validate:RED.validators.number()},
+            columnIdxs: {value:"0",required:true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "segmentation.png",
+        label: function() {
+            return this.name||"segment";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="segment">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-start"><i class="icon-tag"></i>Start</label>
+        <input type="text" id="node-input-start">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-end"><i class="icon-tag"></i>End</label>
+        <input type="text" id="node-input-end">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-columnIdxs"><i class="icon-tag"></i>columnIdxs</label>
+        <input type="text" id="node-input-columnIdxs">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="segment">
+    <p>Accesses content in a ring buffer.</p>
+</script>

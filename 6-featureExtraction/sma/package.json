@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-sma",
+    "version": "0.0.1",
+    "description": "Calculates the signal magnitude area of a signal",
+    "dependencies": { },
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "sma": "sma.js"
+        }
+    }
+}

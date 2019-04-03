@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-noOp",
+    "version": "0.0.1",
+    "description": "Passes the input data as is to the output port",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "noOp": "noOp.js"
+        }
+    }
+}

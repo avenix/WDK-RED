@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-propertySetter",
+    "version": "0.0.1",
+    "description": "Sets the property of a node to the input value. The node should be specified in the code.",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "propertySetter": "propertySetter.js"
+        }
+    }
+}

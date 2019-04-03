@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-addition",
+    "version": "0.0.1",
+    "description": "Adds both dimensions of a two-dimensaional input array",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "addition": "addition.js"
+        }
+    }
+}

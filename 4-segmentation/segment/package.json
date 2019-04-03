@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-segment",
+    "version": "0.0.1",
+    "description": "Accesses content in the ring buffer",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "segment": "segment.js"
+        }
+    }
+}

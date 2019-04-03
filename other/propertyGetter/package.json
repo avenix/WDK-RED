@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-propertyGetter",
+    "version": "0.0.1",
+    "description": "Returns the value of the property of the input object",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "propertyGetter": "propertyGetter.js"
+        }
+    }
+}

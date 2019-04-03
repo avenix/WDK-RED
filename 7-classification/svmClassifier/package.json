@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-svmClassifier",
+    "version": "0.0.1",
+    "description": "Trains a SVMClassifier classifier or classifies a feature vector",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "svmClassifier": "svmClassifier.js"
+        }
+    }
+}

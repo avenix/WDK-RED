@@ -1,0 +1,15 @@
+{
+    "name": "node-red-contrib-entropy",
+    "version": "0.0.1",
+    "description": "Calculates the entropy",
+    "dependencies": {
+    },
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "entropy": "entropy.js"
+        }
+    }
+}

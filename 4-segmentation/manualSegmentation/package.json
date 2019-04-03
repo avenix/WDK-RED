@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-manualSegmentation",
+    "version": "0.0.1",
+    "description": "segments the ringbuffer as: [s-segmentSizeLeft,s+segmentSizeRight]",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "manualSegmentation": "manualSegmentation.js"
+        }
+    }
+}

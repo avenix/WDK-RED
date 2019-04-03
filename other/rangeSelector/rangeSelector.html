@@ -1,0 +1,38 @@
+<script type="text/javascript">
+    RED.nodes.registerType('rangeSelector',{
+        category: 'other',
+        color: '#E9967A',
+        defaults: {
+            name: {value:""},
+            rangeStart: {value:"",required:true,validate:RED.validators.number()},
+            rangeEnd: {value:"",required:true,validate:RED.validators.number()}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "range.png",
+        label: function() {
+            return this.name||"rangeSelector";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="rangeSelector">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-rangeStart"><i class="icon-tag"></i>rangeStart</label>
+        <input type="text" id="node-input-rangeStart" placeholder="rangeStart">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-rangeEnd"><i class="icon-tag"></i>rangeEnd</label>
+        <input type="text" id="node-input-rangeEnd" placeholder="rangeEnd">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="rangeSelector">
+    <p>Returns the values of the input array in the specified range.</p>
+</script>

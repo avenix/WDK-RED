@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-labelMapper",
+    "version": "0.0.1",
+    "description": "Calculates the labelMapper of a set of values",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "labelMapper": "labelMapper.js"
+        }
+    }
+}

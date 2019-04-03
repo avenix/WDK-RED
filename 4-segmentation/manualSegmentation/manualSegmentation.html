@@ -1,0 +1,39 @@
+<script type="text/javascript">
+    RED.nodes.registerType('manualSegmentation',{
+        category: 'segmentation',
+        color: '#AAAA66',
+        defaults: {
+            name: {value:""},
+            segmentSizeLeft: {value:"250",required:true,validate:RED.validators.number()},
+            segmentSizeRight: {value:"200",required:true,validate:RED.validators.number()}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "segmentation.png",
+        label: function() {
+            return this.name||"manualSegmentation";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="manualSegmentation">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    
+    <div class="form-row">
+        <label for="node-input-segmentSizeLeft"><i class="icon-tag"></i>segmentSizeLeft</label>
+        <input type="text" id="node-input-segmentSizeLeft">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-segmentSizeRight"><i class="icon-tag"></i>segmentSizeRight</label>
+        <input type="text" id="node-input-segmentSizeRight">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="manualSegmentation">
+    <p>Outputs a segment with samples [s-segmentSizeLeft,s+segmentSizeRight]</p>
+</script>
+

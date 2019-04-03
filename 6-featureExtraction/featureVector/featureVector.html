@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('featureVector',{
+        category: 'featureExtraction',
+        color: '#E2D96E',
+        defaults: {
+            name: {value:""},
+            nFeatures: {value:"",required:true,validate:RED.validators.number()}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "function.png",
+        label: function() {
+            return this.name||"featureVector";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="featureVector">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    
+    <div class="form-row">
+        <label for="node-input-nFeatures"><i class="icon-tag"></i>nFeatures</label>
+        <input type="text" id="node-input-nFeatures" placeholder="nFeatures">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="featureVector">
+    <p>stores features</p>
+</script>

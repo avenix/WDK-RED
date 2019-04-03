@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('table',{
+        category: 'classification',
+        color: '#E6E0F8',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "classification.png",
+        label: function() {
+            return this.name||"table";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="table">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="table">
+    <p>A table that contains several feature vectors.</p>
+</script>

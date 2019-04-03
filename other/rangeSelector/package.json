@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-rangeSelector",
+    "version": "0.0.1",
+    "description": "Returns the values of the input array in the specified range",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "rangeSelector": "rangeSelector.js"
+        }
+    }
+}

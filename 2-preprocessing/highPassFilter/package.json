@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-highPassFilter",
+    "version": "0.0.1",
+    "description": "Butterworth high pass filter",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "highPassFilter": "highPassFilter.js"
+        }
+    }
+}

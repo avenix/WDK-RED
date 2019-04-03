@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('S2',{
+        category: 'preprocessing',
+        color: '#C0DEED',
+        defaults: {
+            name: {value:""},
+            k: {value:"",required:true,validate:RED.validators.number()}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "function.png",
+        label: function() {
+            return this.name||"S2";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="S2">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-k"><i class="icon-tag"></i>k</label>
+        <input type="text" id="node-input-k">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="S2">
+    <p>Calculates the S2 metric of the values in the message payload</p>
+</script>

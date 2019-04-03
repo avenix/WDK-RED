@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-constantMultiplier",
+    "version": "0.0.1",
+    "description": "Returns the input table with rows labeled as any of the labels in the selectedLabels property",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "constantMultiplier": "constantMultiplier.js"
+        }
+    }
+}

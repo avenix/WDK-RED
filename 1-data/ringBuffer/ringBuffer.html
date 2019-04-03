@@ -1,0 +1,45 @@
+<script type="text/javascript">
+    RED.nodes.registerType('ringBuffer',{
+        category: 'data',
+        color: '#A6BBCF',
+        defaults: {
+            name: {value:""},
+            maxBufferSize: {value:"401",required:true,validate:RED.validators.number()},
+            eventOffset: {value:"0",required:false,validate:RED.validators.number()},
+            numAxes: {value:"6",required:true,validate:RED.validators.number()}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "db.png",
+        label: function() {
+            return this.name||"ringBuffer";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="ringBuffer">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-maxBufferSize"><i class="icon-tag"></i>Buffer Size</label>
+        <input type="text" id="node-input-maxBufferSize">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-eventOffset"><i class="icon-tag"></i>Event offset</label>
+        <input type="text" id="node-input-eventOffset">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-numAxes"><i class="icon-tag"></i>Number of Axes</label>
+        <input type="text" id="node-input-numAxes">
+    </div>
+    
+</script>
+
+<script type="text/x-red" data-help-name="ringBuffer">
+    <p>Stores the data in a ring buffer. Outputs the last sample, or the sample at index n-eventOffset.</p>
+</script>

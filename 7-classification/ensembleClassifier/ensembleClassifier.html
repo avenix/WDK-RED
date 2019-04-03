@@ -1,0 +1,44 @@
+<script type="text/javascript">
+    RED.nodes.registerType('ensembleClassifier',{
+        category: 'classification',
+        color: '#E6E0F8',
+        defaults: {
+            name: {value:""},
+            shouldTrain: {value:"0",required:false,validate:RED.validators.number()},
+            nLearners: {value:"30",required:false,validate:RED.validators.number()},
+            ensembleMethod: {value:"0",required:false,validate:RED.validators.number()}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "classification.png",
+        label: function() {
+            return this.name||"ensembleClassifier";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="ensembleClassifier">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-shouldTrain"><i class="icon-tag"></i>shouldTrain</label>
+        <input type="text" id="node-input-shouldTrain">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-nLearners"><i class="icon-tag"></i>nLearners</label>
+        <input type="text" id="node-input-nLearners">
+    </div>
+    
+    <div class="form-row">
+        <label for="node-input-ensembleMethod"><i class="icon-tag"></i>ensembleMethod</label>
+        <input type="text" id="node-input-ensembleMethod">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="ensembleClassifier">
+    <p>Train and clasify with an ensemble method</p>
+</script>

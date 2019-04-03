@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('merge',{
+        category: 'other',
+        color: '#E9967A',
+        defaults: {
+            name: {value:""},
+            numMessages: {value:"2",required:false,validate:RED.validators.number()}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "join.png",
+        label: function() {
+            return this.name||"merge";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="merge">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-numMessages">
+        <label for="node-input-numMessages"><i class="icon-tag"></i>numMessages</label>
+        <input type="text" id="node-input-numMessages" placeholder="numMessages">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="merge">
+    <p>Merges two or more inputs</p>
+</script>

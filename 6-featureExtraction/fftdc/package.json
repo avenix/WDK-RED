@@ -1,0 +1,15 @@
+{
+    "name": "node-red-contrib-fftdc",
+    "version": "0.0.1",
+    "description": "Calculates the fftdc",
+    "dependencies": {
+    },
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "fftdc": "fftdc.js"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-eventSegmentsLabeler",
+    "version": "0.0.1",
+    "description": "Calculates the eventSegmentsLabeler of a set of values",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "eventSegmentsLabeler": "eventSegmentsLabeler.js"
+        }
+    }
+}

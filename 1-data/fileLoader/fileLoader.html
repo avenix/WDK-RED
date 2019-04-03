@@ -1,0 +1,34 @@
+<script type="text/javascript">
+    RED.nodes.registerType('fileLoader',{
+        category: 'data',
+        color: '#A6BBCF',
+        defaults: {
+            name: {value:""},
+            fileName: {value:"",required:true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"fileLoader";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="fileLoader">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-fileName"><i class="icon-tag"></i>File Name</label>
+        <input type="text" id="node-input-fileName">
+    </div>
+
+    
+</script>
+
+<script type="text/x-red" data-help-name="fileLoader">
+    <p>Loads a file</p>
+</script>

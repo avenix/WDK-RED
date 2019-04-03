@@ -1,0 +1,15 @@
+{
+    "name": "node-red-contrib-maxCrossCorr",
+    "version": "0.0.1",
+    "description": "Calculates the maxCrossCorr",
+    "dependencies": {
+    },
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "maxCrossCorr": "maxCrossCorr.js"
+        }
+    }
+}

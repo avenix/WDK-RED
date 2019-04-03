@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('axisMerger',{
+        category: 'other',
+        color: '#E9967A',
+        defaults: {
+            name: {value:""},
+            nAxes: {value:"2",required:false,validate:RED.validators.number()}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "join.png",
+        label: function() {
+            return this.name||"axisMerger";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="axisMerger">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-nAxes"><i class="icon-tag"></i>nAxes</label>
+        <input type="text" id="node-input-nAxes" placeholder="nAxes">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="axisMerger">
+    <p>Merges two or more arrays</p>
+</script>

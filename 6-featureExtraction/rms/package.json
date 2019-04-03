@@ -1,0 +1,15 @@
+{
+    "name": "node-red-contrib-rms",
+    "version": "0.0.1",
+    "description": "Calculates the rms",
+    "dependencies": {
+    },
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "rms": "rms.js"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('ldClassifier',{
+        category: 'classification',
+        color: '#E6E0F8',
+        defaults: {
+            name: {value:""},
+            shouldTrain: {value:"0",required:false,validate:RED.validators.number()}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "classification.png",
+        label: function() {
+            return this.name||"ldClassifier";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="ldClassifier">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-shouldTrain"><i class="icon-tag"></i>shouldTrain</label>
+        <input type="text" id="node-input-shouldTrain">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="ldClassifier">
+    <p>Accesses content in a ring buffer.</p>
+</script>

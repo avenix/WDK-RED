@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('tableRowSelector',{
+        category: 'other',
+        color: '#E9967A',
+        defaults: {
+            name: {value:""},
+            selectedLabels: {value:"",required:false}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "tableRowSelector.png",
+        label: function() {
+            return this.name||"tableRowSelector";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="tableRowSelector">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-selectedLabels"><i class="icon-tag"></i>selectedLabels</label>
+        <input type="text" id="node-input-selectedLabels" placeholder="selectedLabels">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="tableRowSelector">
+    <p>Returns the input table with rows labeled as any of the labels in the selectedLabels property</p>
+</script>

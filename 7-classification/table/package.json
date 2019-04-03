@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-table",
+    "version": "0.0.1",
+    "description": "A table that contains several feature vectors. The last column is the label",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "table": "table.js"
+        }
+    }
+}

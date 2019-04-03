@@ -1,0 +1,15 @@
+{
+    "name": "node-red-contrib-kurtosis",
+    "version": "0.0.1",
+    "description": "Calculates the kurtosis",
+    "dependencies": {
+    },
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "kurtosis": "kurtosis.js"
+        }
+    }
+}

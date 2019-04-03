@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-lowPassFilter",
+    "version": "0.0.1",
+    "description": "Butterworth low pass filter",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "lowPassFilter": "lowPassFilter.js"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-s2",
+    "version": "0.0.1",
+    "description": "Calculates the s2 of a set of values",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "s2": "s2.js"
+        }
+    }
+}

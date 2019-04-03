@@ -1,0 +1,15 @@
+{
+    "name": "node-red-contrib-quantile",
+    "version": "0.0.1",
+    "description": "Calculates the quantile",
+    "dependencies": {
+    },
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "quantile": "quantile.js"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-S1",
+    "version": "0.0.1",
+    "description": "Calculates the S1 metric of a set of values",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "S1": "S1.js"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('axisSelector',{
+        category: 'other',
+        color: '#E9967A',
+        defaults: {
+            name: {value:""},
+            axes: {value:"",required:true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "batch.png",
+        label: function() {
+            return this.name||"axisSelector";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="axisSelector">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-axes"><i class="icon-tag"></i>axes</label>
+        <input type="text" id="node-input-axes" placeholder="axes">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="axisSelector">
+    <p>Extracts columns from a multi-dimensional data array</p>
+</script>

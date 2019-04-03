@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-matlabPeakDetector",
+    "version": "0.0.1",
+    "description": "Greedy algorithm to find peaks in a stream of incoming samples",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "matlabPeakDetector": "matlabPeakDetector.js"
+        }
+    }
+}

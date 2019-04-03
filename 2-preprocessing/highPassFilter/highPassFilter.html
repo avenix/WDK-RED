@@ -1,0 +1,38 @@
+<script type="text/javascript">
+    RED.nodes.registerType('highPassFilter',{
+        category: 'preprocessing',
+        color: '#C0DEED',
+        defaults: {
+            name: {value:""},
+            order: {value:"",required:true,validate:RED.validators.number()},
+            cutoff: {value:"",required:true,validate:RED.validators.number()}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "function.png",
+        label: function() {
+            return this.name||"highPassFilter";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="highPassFilter">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-order"><i class="icon-tag"></i>Order</label>
+        <input type="text" id="node-input-order">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-cutoff"><i class="icon-tag"></i>cutoff</label>
+        <input type="text" id="node-input-cutoff">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="highPassFilter">
+    <p>high pass filter</p>
+</script>

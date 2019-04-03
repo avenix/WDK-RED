@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-ldClassifier",
+    "version": "0.0.1",
+    "description": "Trains a LDClassifier classifier or classifies a feature vector",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "ldClassifier": "ldClassifier.js"
+        }
+    }
+}

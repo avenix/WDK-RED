@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('magnitudeSquared',{
+        category: 'preprocessing',
+        color: '#C0DEED',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "function.png",
+        label: function() {
+            return this.name||"magnitudeSquared";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="magnitudeSquared">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="magnitudeSquared">
+    <p>Calculates the squared magnitudeSquared of the values in the message payload</p>
+</script>

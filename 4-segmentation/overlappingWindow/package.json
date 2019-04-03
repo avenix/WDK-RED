@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-overlappingWindow",
+    "version": "0.0.1",
+    "description": "Calculates the overlappingWindow of a set of values",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "overlappingWindow": "overlappingWindow.js"
+        }
+    }
+}

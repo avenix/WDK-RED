@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-ringBuffer",
+    "version": "0.0.1",
+    "description": "Stores data in a ring buffer visible at the entire flow",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "ringBuffer": "ringBuffer.js"
+        }
+    }
+}

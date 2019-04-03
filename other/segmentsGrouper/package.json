@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-segmentsGrouper",
+    "version": "0.0.1",
+    "description": "Groups an array of segments according to their label. Returns a cell array of arrays of segments",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "segmentsGrouper": "segmentsGrouper.js"
+        }
+    }
+}

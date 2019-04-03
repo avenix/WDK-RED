@@ -1,0 +1,44 @@
+<script type="text/javascript">
+    RED.nodes.registerType('svmClassifier',{
+        category: 'classification',
+        color: '#E6E0F8',
+        defaults: {
+            name: {value:""},
+            shouldTrain: {value:"0",required:false,validate:RED.validators.number()},
+            boxConstraint: {value:"1",required:false,validate:RED.validators.number()},
+            order: {value:"1",required:false,validate:RED.validators.number()}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "classification.png",
+        label: function() {
+            return this.name||"svmClassifier";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="svmClassifier">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-shouldTrain"><i class="icon-tag"></i>shouldTrain</label>
+        <input type="text" id="node-input-shouldTrain">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-boxConstraint"><i class="icon-tag"></i>boxConstraint</label>
+        <input type="text" id="node-input-boxConstraint">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-order"><i class="icon-tag"></i>order</label>
+        <input type="text" id="node-input-order">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="svmClassifier">
+    <p>Accesses content in a ring buffer.</p>
+</script>

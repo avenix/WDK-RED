@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('featureExtractor',{
+        category: 'featureExtraction',
+        color: '#E2D96E',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "function.png",
+        label: function() {
+            return this.name||"featureExtractor";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="featureExtractor">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    
+    <div class="form-row">
+        <label for="node-input-featureIdx"><i class="icon-tag"></i>featureIdx</label>
+        <input type="text" id="node-input-featureIdx" placeholder="featureIdx">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="featureExtractor">
+    <p></p>
+</script>

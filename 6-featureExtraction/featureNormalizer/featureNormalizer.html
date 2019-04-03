@@ -1,0 +1,38 @@
+<script type="text/javascript">
+    RED.nodes.registerType('featureNormalizer',{
+        category: 'featureExtraction',
+        color: '#E2D96E',
+        defaults: {
+            name: {value:""},
+            means: {value:"",required:true},
+            stds: {value:"",required:true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "function.png",
+        label: function() {
+            return this.name||"featureNormalizer";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="featureNormalizer">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-means"><i class="icon-tag"></i>means</label>
+        <input type="text" id="node-input-means" placeholder="means">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-stds"><i class="icon-tag"></i>stds</label>
+        <input type="text" id="node-input-stds" placeholder="stds">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="featureNormalizer">
+    <p>Normalizes a set of features</p>
+</script>

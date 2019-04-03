@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-fileLoader",
+    "version": "0.0.1",
+    "description": "Loads a data file",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "fileLoader": "fileLoader.js"
+        }
+    }
+}

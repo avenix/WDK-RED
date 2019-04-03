@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-ensembleClassifier",
+    "version": "0.0.1",
+    "description": "Trains an EnsembleClassifier classifier or classifies a feature vector",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "ensembleClassifier": "ensembleClassifier.js"
+        }
+    }
+}

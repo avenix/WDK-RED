@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-magnitude",
+    "version": "0.0.1",
+    "description": "Calculates the magnitude of a set of values",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "magnitude": "magnitude.js"
+        }
+    }
+}

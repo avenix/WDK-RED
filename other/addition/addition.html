@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('addition',{
+        category: 'other',
+        color: '#E9967A',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "addition.png",
+        label: function() {
+            return this.name||"addition";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="addition">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="addition">
+    <p>Adds both dimensions of a two-dimensaional input array</p>
+</script>

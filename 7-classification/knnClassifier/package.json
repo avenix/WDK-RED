@@ -1,0 +1,14 @@
+{
+    "name": "node-red-contrib-knnClassifier",
+    "version": "0.0.1",
+    "description": "Trains a KNNClassifier classifier or classifies a feature vector",
+    "dependencies": {},
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "knnClassifier": "knnClassifier.js"
+        }
+    }
+}

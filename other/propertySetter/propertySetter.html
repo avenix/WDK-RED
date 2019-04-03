@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('propertySetter',{
+        category: 'other',
+        color: '#E9967A',
+        defaults: {
+            name: {value:""},
+            property: {value:"",required:true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "function.png",
+        label: function() {
+            return this.name||"propertySetter";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="propertySetter">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-property"><i class="icon-tag"></i>property</label>
+        <input type="text" id="node-input-property" placeholder="property">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="propertySetter">
+    <p>Sets the property of a node to the input value. The node should be specified in the code.</p>
+</script>
