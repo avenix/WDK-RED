@@ -1,7 +1,7 @@
 
 module.exports = function(RED) {
 
-    function SquaredMagnitudeSumNode(config) {
+    function FFTNode(config) {
 
         RED.nodes.createNode(this,config);
         var node = this;
@@ -12,5 +12,5 @@ module.exports = function(RED) {
     }
     
 
-    RED.nodes.registerType("squaredMagnitudeSum",SquaredMagnitudeSumNode);
+    RED.nodes.registerType("fft",FFTNode);
 }

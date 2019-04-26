@@ -28,17 +28,17 @@ node-red
 
 # Visual Programming
 
-Create an activity recognition chain by dragging elements from the palette and connecting them together. Nodes are documented in the [Wearables Development Toolkit documentation](https://github.com/avenix/WDK#application-development). The following image shows an activity recognition chain for detecting and classifying soccer goalkeeper training exercises using a wearable motion sensor attached to a glove worn by a goalkeeper:
+WDK-RED enables the creation of activity recognition applications by dragging reusable components (i.e. nodes) from the palette and connecting them together. The available nodes are documented in the [Wearables Development Toolkit documentation](https://github.com/avenix/WDK#application-development). The following image shows an activity recognition application for detecting and classifying soccer goalkeeper training exercises using a wearable motion sensor attached to a glove worn by a goalkeeper:
 
-![Node-RED flow](images/node-RED-goalkeeper.png)
+![Node-RED Application Example](images/node-RED-goalkeeper.png)
 
 # Exporting
 
-Flows created with Node-RED can be exported over the settings button: 
+Activity recognition applications created with Node-RED can be exported over the settings button: 
 
-![Exporting a flow](images/node-RED-exporting.png)
+![Exporting an application](images/node-RED-exporting.png)
 
-Exported flows can be loaded and executed in the Wearables Development Toolkit as described [here](https://github.com/avenix/WDK#Development-with-Node-RED).
+Exported applications can be loaded and executed in the Wearables Development Toolkit as described [here](https://github.com/avenix/WDK#Development-with-Node-RED).
 
 
 ## References

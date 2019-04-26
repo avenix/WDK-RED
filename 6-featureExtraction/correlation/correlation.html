@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    RED.nodes.registerType('squaredMagnitudeSum',{
+    RED.nodes.registerType('correlation',{
         category: 'featureExtraction',
         color: '#E2D96E',
         defaults: {
@@ -10,12 +10,12 @@
         outputs:1,
         icon: "function.png",
         label: function() {
-            return this.name||"squaredMagnitudeSum";
+            return this.name||"correlation";
         }
     });
 </script>
 
-<script type="text/x-red" data-template-name="squaredMagnitudeSum">
+<script type="text/x-red" data-template-name="correlation">
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i>Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
@@ -27,6 +27,6 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="squaredMagnitudeSum">
-    <p>Calculates the squaredMagnitudeSum of the values in the message payload</p>
+<script type="text/x-red" data-help-name="correlation">
+    <p>Calculates the correlation of the values in the message payload</p>
 </script>

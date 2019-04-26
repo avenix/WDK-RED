@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    RED.nodes.registerType('overlappingWindow',{
+    RED.nodes.registerType('slidingWindow',{
         category: 'segmentation',
         color: '#AAAA66',
         defaults: {
@@ -9,18 +9,18 @@
         outputs:1,
         icon: "segmentation.png",
         label: function() {
-            return this.name||"overlappingWindow";
+            return this.name||"slidingWindow";
         }
     });
 </script>
 
-<script type="text/x-red" data-template-name="overlappingWindow">
+<script type="text/x-red" data-template-name="slidingWindow">
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i>Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="overlappingWindow">
+<script type="text/x-red" data-help-name="slidingWindow">
     <p>Generates segments of size windowSize at every iterationSize</p>
 </script>

@@ -50,5 +50,5 @@ module.exports = function(RED) {
 		global.Metrics.flops += 16;
 	}
 
-	RED.nodes.registerType("simpleSimplePeakDetector",SimplePeakDetectorNode);
+	RED.nodes.registerType("simplePeakDetector",SimplePeakDetectorNode);
 }

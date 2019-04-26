@@ -1,0 +1,15 @@
+{
+    "name": "node-red-contrib-correlation",
+    "version": "0.0.1",
+    "description": "Calculates the correlation",
+    "dependencies": {
+    },
+    "keywords": [
+        "node-red"
+    ],
+    "node-red": {
+        "nodes": {
+            "correlation": "correlation.js"
+        }
+    }
+}

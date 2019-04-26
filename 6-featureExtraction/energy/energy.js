@@ -1,13 +1,16 @@
+
 module.exports = function(RED) {
 
-    function OverlappingWindow(config) {
+    function Energy(config) {
+
         RED.nodes.createNode(this,config);
         var node = this;
+
         node.on('input', function(msg) {
-            //TODO
             node.send(msg);
         });
     }
     
-    RED.nodes.registerType("overlappingWindow",OverlappingWindow);
+
+    RED.nodes.registerType("energy",Energy);
 }
