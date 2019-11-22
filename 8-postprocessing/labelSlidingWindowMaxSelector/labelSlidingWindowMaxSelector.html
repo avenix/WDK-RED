@@ -1,0 +1,38 @@
+<script type="text/javascript">
+    RED.nodes.registerType('labelSlidingWindowMaxSelector',{
+        category: 'postprocessing',
+        color: '#D8BFD8',
+        defaults: {
+            name: {value:""},
+            windowSize: {value:"",required:true,validate:RED.validators.number()},
+            minimumCount: {value:"",required:true,validate:RED.validators.number()}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "function.png",
+        label: function() {
+            return this.name||"labelSlidingWindowMaxSelector";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="labelSlidingWindowMaxSelector">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-windowSize"><i class="icon-tag"></i>windowSize</label>
+        <input type="text" id="node-input-windowSize">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-minimumCount"><i class="icon-tag"></i>minimumCount</label>
+        <input type="text" id="node-input-minimumCount">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="labelSlidingWindowMaxSelector">
+    <p>high pass filter</p>
+</script>
