@@ -4,7 +4,7 @@ WDK-RED is a rapid prototyping platform for wearable device applications. Most w
 
 
 # Setup
-* * ```git clone https://github.com/avenix/WDK-RED.git```
+*  ```git clone https://github.com/avenix/WDK-RED.git```
 * Install Node-RED as described in the [Node-RED GitHub page](https://github.com/node-red/node-redn).
 * Install the WDK-RED nodes:
     1. Go to your Node-RED installation directory, usually ```cd ~/.node-red```
