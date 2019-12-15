@@ -43,9 +43,10 @@ Exported applications can be loaded and executed in the Wearables Development To
 
 ## References
 
-1. Matlab tutorial on Activity Recognition for wearables: https://github.com/avenix/ARC-Tutorial/
-2. Andreas Bulling's tutorial on Activity Recognition: https://dl.acm.org/citation.cfm?id=2499621
-3. Wearables Development Toolkit: https://github.com/avenix/WDK
+1. Repository of the Wearables Development Toolkit: https://github.com/avenix/WDK
+2. My paper describing the Wearables Development Toolkit [WDK paper](https://www.jhaladjian.com/publications/haladjian19WDK.pdf) and [BibTeX file](https://www.jhaladjian.com/publications/haladjian19WDK.bib)
+3. My Matlab tutorial on Activity Recognition for wearables: https://github.com/avenix/ARC-Tutorial/
+4. [Andreas Bulling's tutorial on Activity Recognition](https://dl.acm.org/citation.cfm?id=2499621)
 
 ## About
 My name is Juan Haladjian. I developed the WDK-RED platform as part of my post-doc at the Technical University of Munich. Feel free to contact me with questions or feature requests. The project is under an MIT license. You are welcome to use the code in this repository, extend it and redistribute it for any purpose, as long as you give credit for it by copying the *LICENSE.txt file* to any copy of this software.
